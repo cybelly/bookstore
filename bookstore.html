@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="livroCard.js"></script>
+</head>
+<body>
+  <nav class="navbar" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+        <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+      </svg>
+      <a class="navbar-brand">BOOKSTORE</a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar produto" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+<br>
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+        <livro-card
+          titulo="Hillbilly Elegy: A Memoir of a Family and Culture in Crisis"
+          autor="J. D. Vance"
+          preco="$ 19,12"
+          imagem="https://images-na.ssl-images-amazon.com/images/I/81ytGlIkLoL._AC_UL254_SR254,254_.jpg"
+        ></livro-card>
+      </div>
+      <div class="col">
+        <livro-card
+          titulo="It Ends with Us: A Novel"
+          autor="Colleen Hoover"
+          preco="$ 18,47"
+          imagem="https://images-na.ssl-images-amazon.com/images/I/813aV273-rL._AC_UL210_SR195,210_.jpg"
+        ></livro-card>
+      </div>
+      <div class="col">
+        <livro-card
+          titulo="A Court of Thorns and Roses"
+          autor="Sarah J. Maas"
+          preco="$ 17,59"
+          imagem="https://m.media-amazon.com/images/I/51FgxGdVh5L._SY445_SX342_.jpg"
+        ></livro-card>
+      </div>
+      <div class="col">
+        <livro-card
+          titulo="Bridgerton: Daphne's Story, The Duke and I"
+          autor="Julia Quinn"
+          preco="$ 20,99"
+          imagem="https://m.media-amazon.com/images/I/51s4o5JJMLL._SY445_SX342_.jpg"
+        ></livro-card>
+      </div>
+      <div class="col">
+        <livro-card
+          titulo="House of Earth and Blood (Crescent City Book 1)"
+          autor="Sarah J. Maas"
+          preco="$ 20,90"
+          imagem="https://m.media-amazon.com/images/I/51n2SL82XlL._SY445_SX342_.jpg"
+        ></livro-card>
+      </div>
+      <div class="col">
+        <livro-card
+          titulo="Doctor Sleep: A Novel"
+          autor=" Stephen King"
+          preco="$ 18,47"
+          imagem="https://m.media-amazon.com/images/I/41izB8XeI3L._SY445_SX342_.jpg"
+        ></livro-card>
+      </div>
+     
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
